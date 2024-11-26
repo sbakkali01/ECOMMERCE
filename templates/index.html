@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<title>Ecommerce</title>
 <head>
+    <title>Ecommerce</title>
     <link rel="stylesheet" type="text/css" href="static/index.css">
 </head>
 <body>
-<div class="navbar">
-    <div class="left-navbar">
-        <a href="">Home</a>
-        <a href="">Products</a>
-        <a href="">My profile</a>
-    </div>
-    <div class="right-navbar">
-        <a href="">Login</a>
-        <a href="">Register</a>
+{% block navbar %}
+{% endblock %}
+<div class="page-content">
+    <div class="content">
+        {% block home %}
+        {% endblock %}
     </div>
 </div>
 </body>

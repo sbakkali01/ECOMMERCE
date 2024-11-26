@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+<head>
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="static/navbar.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+{% block navbar %}
+
+
+<div class="navbar">
+    <div class="left-navbar">
+        <a href="/">Home</a>
+        <a href="/products">Products</a>
+        <a href="/my_profile">My profile</a>
+    </div>
+    <div class="right-navbar">
+        <a href="">Login</a>
+        <a href="">Register</a>
+    </div>
+</div>
+
+{% endblock %}
