@@ -1,14 +1,12 @@
-.navbar {
-    display: flex;
+.page-content{
+    height: 100vh;
     width: 100vw;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    border: dimgrey solid 2px;
+    background-color: lightblue;
 }
 
-.left-navbar{
-    margin-left: 20px;
-}
-.right-navbar{
-    margin-right: 20px;
+.content{
+    /*color:darkred;*/
 }

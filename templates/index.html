@@ -1,15 +1,18 @@
 <!DOCTYPE html>
+
 <head>
     <title>Ecommerce</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}" >
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
 </head>
 <body>
-{% block navbar %}
-{% endblock %}
+
 <div class="page-content">
     <div class="content">
-        {% block home %}
-        {% endblock %}
+        <form action='{{ url_for("main_page") }}' method="post" enctype="multipart/form-data">
+            <label>Upload your PDF here : </label>
+            <input type="file" name="file_input">
+            <button type="submit">Submit</button>
+        </form>
     </div>
 </div>
 </body>
